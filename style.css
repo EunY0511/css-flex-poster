@@ -11,6 +11,7 @@ body {
 .header-main {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid rgb(0, 0, 0);
 }
 
@@ -35,7 +36,6 @@ body {
 .header__column {
   display: flex;
   flex-direction: column;
-  align-items: space-between;
   margin-top: 20px;
   font-size: 10px;
 }
@@ -52,17 +52,16 @@ body {
   width: 230px;
   height: 230px;
   border-radius: 50%;
-  display: inline-block;
 }
 
-.circle__first {
+.circle__column:first-child div {
   background-color: darksalmon;
 }
 
-.circle__second {
+.circle__column:nth-child(2) div {
   background-color: lightblue;
 }
 
-.circle__third {
+.circle__column:last-child div {
   background-color: cadetblue;
 }
